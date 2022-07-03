@@ -3,4 +3,5 @@
   tasks:
     - name: Execute shell commands
       shell: uname
-    - debug: msg="Hello"
+      register: uname_result
+    - debug: msg="{{uname_result}}"
