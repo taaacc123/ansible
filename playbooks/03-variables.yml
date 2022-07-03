@@ -1,6 +1,6 @@
 ---
 - hosts: dev
-  var_files:
+  vars_files:
     - variables.yml
   vars:
     variable1: "PlayBookValue"
