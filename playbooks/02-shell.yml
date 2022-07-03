@@ -1,6 +1,6 @@
 ---
 - hosts: dev
   tasks:
-    - name: Ping All Servers
+    - name: Execute shell commands
       shell: uname
     - debug: msg="Hello"
