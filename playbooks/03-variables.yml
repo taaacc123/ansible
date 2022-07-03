@@ -1,5 +1,7 @@
 ---
 - hosts: dev
+  var_files:
+    - variables.yml
   vars:
     variable1: "PlayBookValue"
   tasks:
