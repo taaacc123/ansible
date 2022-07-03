@@ -3,4 +3,4 @@
   tasks:
     - name: Ping All Servers
       shell: uname
-    - debug: msg="hello"
+    - debug: msg="Hello"
