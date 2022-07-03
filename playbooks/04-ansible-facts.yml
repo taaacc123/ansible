@@ -7,4 +7,5 @@
       debug: msg="{{ansible_hostname}}"
     - name: distribution
       debug: msg="{{ansible_distribution}}"
+    - debug: var"{{ansible_architecture}}
     
