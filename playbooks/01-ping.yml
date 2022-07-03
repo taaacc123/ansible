@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: qa
   tasks:
     - name: Ping All Servers
       action: ping
