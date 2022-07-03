@@ -1,9 +1,5 @@
 ---
-- hosts: dev
-  vars_files:
-    - variables.yml
-  vars:
-    variable1: "PlayBookValue"
+- hosts: qa
   tasks:
-    - name: Variables
-      debug: msg="Value is {{variable1}}"
+    - name: Kernel
+      debug: msg="{{ansible_kernel}}"
