@@ -1,7 +1,7 @@
 ---
 - hosts: dev
+  vars:
+    variable1: "PlayBookValue"
   tasks:
-    - name: Execute shell commands
-      shell: uname
-      register: uname_result
-    - debug: msg="{{uname_result.stdout_lines}}"
+    - name: Variables
+      debug: msg="Value is {{variable1}}"
