@@ -2,7 +2,7 @@
 - hosts: dev
   become: true
   tasks:
-    - yum:
+    - apt:
         name:
           - httpd
         state: present
