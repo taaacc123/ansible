@@ -1,0 +1,10 @@
+---
+- hosts: dev
+  become: true
+  tasks:
+    - apt:
+        name:
+          - nginx
+        state: present
+    - service: name=nginx state=started enabled=yes
+    - raw: "echo Welcome to 28minutes, this is $(hostname -i) | sudo tee /var/www/html/index.html" 
