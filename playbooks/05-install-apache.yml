@@ -7,4 +7,4 @@
           - httpd
         state: present
     - service: name=httpd state=started enabled=yes
-    - raw: "echo Welcome to 28minutes | sudo tee /var/www/html/index.html"
+    - raw: "echo Welcome to 28minutes | sudo tee /var/www/html/index.html" 
