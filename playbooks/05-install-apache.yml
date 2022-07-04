@@ -7,4 +7,4 @@
           - nginx
         state: present
     - service: name=nginx state=started enabled=yes
-    - raw: "echo Welcome to 28minutes, this is ($hostname) | sudo tee /var/www/html/index.html" 
+    - raw: "echo Welcome to 28minutes, this is $(hostname) | sudo tee /var/www/html/index.html" 
