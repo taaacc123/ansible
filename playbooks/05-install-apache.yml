@@ -4,7 +4,7 @@
   tasks:
     - apt:
         name:
-          - httpd
+          - nginx
         state: present
     - service: name=httpd state=started enabled=yes
     - raw: "echo Welcome to 28minutes | sudo tee /var/www/html/index.html" 
