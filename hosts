@@ -7,7 +7,7 @@ qa1 ansible_host=20.120.8.189
 
 [first]
 dev2
-qa10
+qa1
 
 [groupofgroups:children]
 dev
