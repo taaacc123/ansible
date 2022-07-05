@@ -12,7 +12,7 @@
       with_items:
       - item1
       - item2
-    - debug: var=item
+    - debug: var=item.name
       with_items:
       - name: Range
         country: India
