@@ -10,5 +10,5 @@
 #      when: ansible_system == 'Linux'    
     - debug: var=item
       with_items:
-      -item1
-      -item2
+      - item1
+      - item2
