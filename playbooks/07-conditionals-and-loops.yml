@@ -5,7 +5,7 @@
     color: "Red"
   tasks:
 #    - debug: var=hostvars
-    - debug: var=ansible_system
+#    - debug: var=ansible_system
     - debug: var=color
       when: ansible_system == 'Linux'
 #Prints Red if system is Linux
