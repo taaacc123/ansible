@@ -4,6 +4,6 @@
     - name: Ping All Servers
       action: ping
     - debug: msg="hello"
-- hosts: azure_rm
+- hosts: devsubset
   tasks:
     - debug: msg="hello dev"
