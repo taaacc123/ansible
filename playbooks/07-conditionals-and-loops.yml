@@ -1,11 +1,14 @@
 ---
 - hosts: qa
   vars: 
-    #system: "Windows"
-    color: "Red"
+#    system: "Windows"
+#    color: "Red"
   tasks:
 #    - debug: var=hostvars
 #    - debug: var=ansible_system
-    - debug: var=color
-      when: ansible_system == 'Linux'
-#Prints Red if system is Linux
+#    - debug: var=color
+#      when: ansible_system == 'Linux'    
+    - debug: var=item
+      with_items:
+      -item1
+      -item2
