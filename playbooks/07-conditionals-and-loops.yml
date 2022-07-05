@@ -1,4 +1,5 @@
 ---
 - hosts: dev 
   tasks:
-    - debug: var=hostvars
+#    - debug: var=hostvars
+    - debug: var=ansible_system
