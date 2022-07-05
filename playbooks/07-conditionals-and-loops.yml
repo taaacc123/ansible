@@ -12,3 +12,11 @@
       with_items:
       - item1
       - item2
+    - debug: var=item
+      with_items:
+      - name: Range
+        country: India
+      - name: Jane
+        country: US
+      - name: Does
+        country: Netherlands
