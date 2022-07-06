@@ -1,6 +1,6 @@
-plugin: azure_rmm
+plugin: azure_rm
 
 include_vm_resource_groups:
-- Giri12
+- Giri1
 
 auth_source: auto
