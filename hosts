@@ -13,5 +13,3 @@ qa1
 dev
 first
 
-[devsubset]
-dev[1:2]
