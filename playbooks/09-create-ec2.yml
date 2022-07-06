@@ -8,7 +8,10 @@
         instance_type: t2.micro
         image: ami-098e42ae54c764c35
         region: us-west-2
-        count: 1
+        #count: 1
+        exact_count: 1
+        count_tag: {type: http}
+        # we are specifying that we want 2 ec2's with http
         vpc_subnet_id: subnet-02f6d35889e24cdc0
         assign_public_ip: yes
         group: launch-wizard-1
