@@ -1,4 +1,4 @@
-plugin: azure_rm
+plugin: msrest
 
 include_vm_resource_groups:
 - Giri1
