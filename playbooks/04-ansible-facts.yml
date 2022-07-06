@@ -7,7 +7,7 @@
       debug: msg="{{ansible_hostname}}"
     - name: distribution
       debug: msg="{{ansible_distribution}}"
-    - debug: var"{{ansible_userspace_architecture"}}"
+#    - debug: var"{{ansible_userspace_architecture"}}"
     - debug: var"{{inventory_hostname}}"
     - debug: var"{{groups}}"
     - debug: var"{{group_names}}"
