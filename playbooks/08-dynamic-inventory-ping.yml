@@ -6,4 +6,4 @@
     - debug: msg="hello"
 - hosts: aws_ec2
   tasks:
-    - debug: msg="hello dev"
+    - debug: msg="hello dev" 
