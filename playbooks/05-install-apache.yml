@@ -2,7 +2,7 @@
 - hosts: dev
   become: true
   tasks:
-    - apt:
+    - yum:
         name:
           - nginx
         state: present
