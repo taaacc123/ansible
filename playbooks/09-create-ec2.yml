@@ -1,8 +1,6 @@
 ---
 - hosts: localhost
-  connection: local
-  become: False
-  gather_facts: False 
+  connection: local 
   tasks:
     - ec2:
         key_name: July2022
