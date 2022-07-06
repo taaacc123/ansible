@@ -4,3 +4,13 @@ include_vm_resource_groups:
 - Giri1
 
 auth_source: auto
+
+keyed_groups:
+
+# Generate 'tag_(tag name)_(tag value)' for each tag on a VM.
+- prefix: tag
+  key: tags
+
+# Generate 'loc_(location name)', depending on the VM's location
+- prefix: loc
+  key: location
