@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   connection: local
-   
+
   tasks:
     - ec2:
         key_name: July2022
@@ -11,7 +11,7 @@
         count: 1
         vpc_subnet_id: subnet-02f6d35889e24cdc0
         assign_public_ip: yes
-        group: sg-0eee4d8bcb83ef806
+        group: launch-wizard-1
         instance_tags: {type: http, Environment: QA}
         wait: yes
       register: ec2_output
