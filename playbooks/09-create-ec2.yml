@@ -7,7 +7,7 @@
         image: ami-098e42ae54c764c35
         region: us-west-2
         count: 1
-        vpc_subnet: subnet-02f6d35889e24cdc0
+        vpc_subnet_id: subnet-02f6d35889e24cdc0
         assign_public_ip: yes
         group: sg-0eee4d8bcb83ef806
         instance_tags: {type: http, Environment: QA}
