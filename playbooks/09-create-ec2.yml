@@ -1,9 +1,16 @@
 ---
-- hosts: all
+- hosts: localhost
   tasks:
-    - name: Ping All Servers
-      action: ping
-    - debug: msg="hello"
-- hosts: dev
-  tasks:
-    - debug: msg="hello dev"
+    - ec2:
+        key_name: July2022
+        instance_type: t2.micro
+        image: ami-098e42ae54c764c35
+        region: us-west-2
+        count: 1
+        vpc_subnet: subnet-02f6d35889e24cdc0
+        assign_public_ip: yes
+        group: sg-0eee4d8bcb83ef806
+        instance_tags: {type: http, Environment: QA}
+        wait: yes
+      register: ec2_output
+    - debug: var=ec2_output
