@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
-  connection: local 
+  connection: local
+   
   tasks:
     - ec2:
         key_name: July2022
