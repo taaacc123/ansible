@@ -1,15 +1,4 @@
 [dev]
-dev1 ansible_host=20.232.109.188
-dev2 ansible_host=52.188.12.78
-
-[qa]
-qa1 ansible_host=20.120.8.189
-
-[first]
-dev2
-qa1
-
-[groupofgroups:children]
-dev
-first
-
+35.88.157.130
+52.10.166.231
+35.87.108.171
